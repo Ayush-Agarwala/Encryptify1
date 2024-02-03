@@ -1,8 +1,11 @@
+/* eslint-disable no-unused-vars */
 import { Link } from "react-router-dom"
-
+import Navbar from "./Navbar"
 
 function Applayout() {
     return (
+      <>
+        <Navbar/>
         <div className="app-container">
         <h1>Encrypted Data Transfer</h1>
         <div className="options-container">
@@ -16,6 +19,7 @@ function Applayout() {
         
         
       </div>
+      </>
     )
 }
 
