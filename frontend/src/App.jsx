@@ -6,18 +6,21 @@ import './App.css';
 import SenderPage from './SenderPage';
 import ReceiverPage from './ReceiverPage';
 import Applayout from './Applayout';
-
+import Sendersteg from './sendersteg';
+import Receiverwithstego from './Receiverwithstego';
 
 const router=createBrowserRouter([{
   path:"/",
   element:<Applayout/>
 },
  { path:"sender",
-    element:<SenderPage/>
+    //element:<SenderPage/>
+    element:<Sendersteg/>
 },
 {
   path:"receiver",
-  element:<ReceiverPage/>
+  //element:<ReceiverPage/>
+  element:<Receiverwithstego/>
 }
 ])
 
